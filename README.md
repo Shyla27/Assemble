@@ -1,36 +1,54 @@
-### Hero Squad 
+### HEROES ASSEMBLE
 Hero Squad App allows you to to recruit well-balanced team of superheroes.Each hero can only be assigned to one squad at a time.
 
  ### Author 
- Shyla Bernice 
+ ### Shyla Bernice ###
+
 ### About 
 HeroSquad is an application that helps you recruit new heroes to different squads.you can create a squade of your own or use other squads. 
 
 ### Set it up 
-Step 1: 
-Go to github and search for my username :Shyla27 and clone the repo using  this  link:https://github.com/Shyla27/Hero-Squad.git.
- Step 2:
- Open the project with Intellij or any text editor in my case i was using Visual Studio.
-Step 3:
-On your terminal type gradle run in order to run the app from your local machine.
- Step 4:
-Open localhost:4567  in your browser; 
-### How it works 
-Assuming you have the app in your computer already,lets begin 
-So you'll need to create a squad or use the squads in the game already
-once you've done that you'll get to see a list of all squads and the number of heroes assigned to each.
-if you'd like to create a new hero to a specific squad just click on the number and it will redirect you to a new page where you'll now create the hero you want to.
-basically that's it. 
-Have fun 
- ### Bugs 
-no bugs experienced but if you experience any sort of issues don't hesitate to contact me via sheilabernicew@gmail.com
- ### Tech used 
-Java 
-Git 
-Bootstrap and css for styling 
-Spark  
-Heroku in deployment 
-### LICENSE
- MIT License
 
-Copyright (c) [2019][Shyla BERNICE]
+
+* To run the application, first install the java development kit from `https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
+* Next clone the project using `$ git clone https://github.com/Shyla27/Encrypt_It.git` to your preferred folder.
+
+* Open the project with Intellij or any text editor 
+
+* On your terminal type `gradle run` to run the app from your local machine.
+* Open `localhost:4567 ` in your browser; 
+
+ ### Bugs 
+ I had issues with routing and also testing 
+ ### CONTACT ME 
+ If you have any Questions please reach out to me via `sheilabernicew@gmail.com`
+ 
+  ### Tech used 
+* Java 
+* Git 
+* Gradle
+* Spark  
+* Heroku in deployment 
+
+## MIT LICENSE
+
+Copyright (c) 2019 Shyla_B
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
