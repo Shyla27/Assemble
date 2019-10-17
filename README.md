@@ -1,7 +1,8 @@
-### HEROES ASSEMBLE
-Hero Squad App allows you to to recruit well-balanced team of superheroes.Each hero can only be assigned to one squad at a time.
+###  ASSEMBLE
+ASSEMBLE allows you to to recruit well-balanced team of superheroes.Each hero can only be assigned to one squad at a time.
 
  ### Author 
+ 
  ### Shyla Bernice ###
 
 ### About 
@@ -19,9 +20,10 @@ HeroSquad is an application that helps you recruit new heroes to different squad
 * Open `localhost:4567 ` in your browser; 
 
  ### Bugs 
- I had issues with routing and also testing 
+ I had issues with routing and also testing  and opted to not implement DAO and databases\
+ 
  ### CONTACT ME 
- If you have any Questions please reach out to me via `sheilabernicew@gmail.com`
+ If you have any Questions please reach out to me via `sheilabernicew@gmail.com` or `+254 795 811714`
  
   ### Tech used 
 * Java 
