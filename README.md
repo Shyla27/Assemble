@@ -1,4 +1,4 @@
-###  ASSEMBLE
+ ###  ASSEMBLE
 ASSEMBLE allows you to to recruit well-balanced team of superheroes.Each hero can only be assigned to one squad at a time.
 
  ### Author 
