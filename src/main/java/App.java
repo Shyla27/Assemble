@@ -11,12 +11,17 @@ import java.util.Map;
 public class App {
         static int getHerokuAssignedPort() {
             ProcessBuilder processBuilder = new ProcessBuilder();
+            Integer port;
+
+
             if (processBuilder.environment().get("PORT") != null) {
                 return Integer.parseInt(processBuilder.environment().get("PORT"));
             }
             return 4567;
         }
+ port(port);
 
+ 
     public static void main(String[] args) {
 
         port(getHerokuAssignedPort());
