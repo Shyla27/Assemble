@@ -1,4 +1,4 @@
-plugins {
+apply plugins {
     id 'java'
     id 'application'
 }
@@ -8,18 +8,23 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 mainClassName = "App"
-archivesBaseName = "hero-squad"
-applicationName = "hero-squad"
+archivesBaseName = "HEROES"
+applicationName = "HEROES"
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
-
+test { 
+    testLogging { 
+        exceptionFormat = 'full' events "passed", "skipped", "failed" 
+    } 
+}
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "com.sparkjava:spark-core:2.6.0"
     compile "com.sparkjava:spark-template-handlebars:2.5.5"
     compile "org.slf4j:slf4j-simple:1.7.21"
 }
+
 defaultTasks = ['clean']
 task stage(dependsOn: ['clean', 'installApp'])
