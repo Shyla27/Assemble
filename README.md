@@ -12,7 +12,7 @@ HeroSquad is an application that helps you recruit new heroes to different squad
 
 
 * To run the application, first install the java development kit from `https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
-* Next clone the project using `$ git clone https://github.com/Shyla27/Encrypt_It.git` to your preferred folder.
+* Next clone the project using `$ git clone https://github.com/Shyla27/Assemble.git` to your preferred folder.
 
 * Open the project with Intellij or any text editor 
 
