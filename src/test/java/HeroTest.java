@@ -28,38 +28,38 @@ public class HeroTest {
     @Test
     public void getAge_returnsInteger_12() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         assertEquals(12,testHero.getAge());
     }
     @Test
     public void getPower_returnsString_cooking() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         assertEquals("cooking",testHero.getPower());
     }
     @Test
     public void getWeakness_returnsString_eating() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         assertEquals("eating", testHero.getWeakness());
     }
     @Test
     public void getId_assignsUniqueId_int() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         assertEquals(1,testHero.getId());
     }
     @Test
     public void getSquadId_assignsEachHeroItsSquadId_int() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("vic",12,"eating","showering",testSquad.getId());
+        Hero testHero = new Hero("Davies",12,"eating","showering",testSquad.getId());
         testSquad.addHero(testHero);
         assertEquals(testSquad.getId(),testHero.getSquadId());
     }
     @Test
     public void instances_containsHeroObjectsCreated_true() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         Hero anotherTestHero = new Hero("Beryll",35,"drinking","men",testSquad.getId());
         assertTrue(Hero.getHeroes().contains(testHero));
         assertTrue(Hero.getHeroes().contains(anotherTestHero));
@@ -67,7 +67,7 @@ public class HeroTest {
     @Test
     public void getHeroes_returnsList_List() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("mario", 12, "cooking","eating",testSquad.getId());
+        Hero testHero = new Hero("Maria", 22, "cooking","eating",testSquad.getId());
         List<Hero> expectedOutput = new ArrayList<Hero>();
         expectedOutput.add(testHero);
         assertEquals(expectedOutput.get(0), Hero.getHeroes().get(0));
@@ -75,14 +75,14 @@ public class HeroTest {
     @Test
     public void find_ReturnsAnInstanceOfHeroes_Hero() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("muchui",12,"eating","food",testSquad.getId());
+        Hero testHero = new Hero("men",12,"eating","food",testSquad.getId());
         assertEquals(testHero,Hero.findHero(1));
     }
     @Test
     public void find_returnsCorrectHeroWhenMoreThanOneExists_Hero() {
         Squad testSquad = new Squad("awesome", 2,"eating pancakes");
-        Hero testHero = new Hero("Amos",12,"food","eating",testSquad.getId());
-        Hero another = new Hero("Clit",21,"hoop","cake",testSquad.getId());
+        Hero testHero = new Hero("Alice",12,"food","eating",testSquad.getId());
+        Hero another = new Hero("Peter",21,"hoop","cake",testSquad.getId());
         assertEquals(another,Hero.findHero(2));
     }
 }
