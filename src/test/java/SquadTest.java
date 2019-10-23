@@ -76,8 +76,8 @@ public class SquadTest {
         Hero Henry = new Hero("Henry",12,"superspeed","Ponytails",damn.getId());
         damn.addHero(Captain);
         damn.addHero(Henry);
-        damn.removeHero(henry);
-        assertFalse(damn.getHeroes().contains(henry));
+        damn.removeHero(Henry);
+        assertFalse(damn.getHeroes().contains(Henry));
     }
     @Test
     public void removeHeroes_removesSingleInstanceOfHero_false() {
@@ -87,8 +87,8 @@ public class SquadTest {
         damn.addHero(Captain);
         damn.addHero(Henry);
         damn.removeHeroes();
-        assertFalse(damn.getHeroes().contains(henry));
-        assertFalse(damn.getHeroes().contains(captain));
+        assertFalse(damn.getHeroes().contains(Henry));
+        assertFalse(damn.getHeroes().contains(Captain));
     }
     @Test
     public void find_ReturnsAnInstanceOfSquad_Squad() {
