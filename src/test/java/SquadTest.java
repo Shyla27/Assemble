@@ -74,25 +74,25 @@ public class SquadTest {
         Squad damn = new Squad("Avengers",1,"assemble");
         Hero Captain = new Hero("Captain", 34, "superstrong", "Girls",damn.getId());
         Hero Henry = new Hero("Henry",12,"superspeed","Ponytails",damn.getId());
-        damn.addHero(muchui);
-        damn.addHero(victor);
-        damn.removeHero(victor);
-        assertFalse(damn.getHeroes().contains(victor));
+        damn.addHero(Captain);
+        damn.addHero(Henry);
+        damn.removeHero(henry);
+        assertFalse(damn.getHeroes().contains(henry));
     }
     @Test
     public void removeHeroes_removesSingleInstanceOfHero_false() {
         Squad damn = new Squad("Avengers",2,"assemble");
         Hero Captain = new Hero("Captain", 34, "superstrong", "Girls",damn.getId());
         Hero Henry = new Hero("Henry",12,"superspeed","Ponytails",damn.getId());
-        damn.addHero(muchui);
-        damn.addHero(victor);
+        damn.addHero(Captain);
+        damn.addHero(Henry);
         damn.removeHeroes();
-        assertFalse(damn.getHeroes().contains(victor));
-        assertFalse(damn.getHeroes().contains(muchui));
+        assertFalse(damn.getHeroes().contains(henry));
+        assertFalse(damn.getHeroes().contains(captain));
     }
     @Test
     public void find_ReturnsAnInstanceOfSquad_Squad() {
-        Squad damn = new Squad("Avengerss",1,"assemble");
+        Squad damn = new Squad("Avengers",1,"assemble");
         assertEquals(damn,Squad.find(1));
     }
     @Test
